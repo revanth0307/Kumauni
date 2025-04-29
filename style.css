@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: red; 
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;                 
+    background: black;
+    color: white;
+    padding: 1rem;
+    margin: 42px 42px 0 42px; 
+    padding-bottom: 42px;
+    min-height: calc(100vh - 42px - 2rem);
+    box-sizing: border-box;
+  }
+  .content h1 {
+    text-align: center;
+  }
+  .border {
+    position: fixed;    
+    z-index:10;                       
+    background-image: url('kumauni-42.svg');
+    background-repeat: repeat;
+
+  }
+ 
+  .border.top {
+    top: 0; left: 0; right: 0;
+    height: 42px;                             
+    background-repeat: repeat-x;
+    background-size: 40px 42px;
+  }
+
+  .border.bottom {
+    bottom: 0; left: 0; right: 0;
+    height: 42px;
+    background-repeat: repeat-x;
+    background-size: 40px 42px;
+    transform: rotate(180deg);
+  }
+
+  .border.left {
+    top: 42px; bottom: 42px; left: 0;
+    width: 42px;
+    background-repeat: repeat-y;
+    background-size: 42px 40px;
+  }
+
+  .border.right {
+    top: 42px; bottom: 42px; right: 0;
+    width: 42px;
+    background-repeat: repeat-y;
+    background-size: 42px 40px;
+    transform: rotate(180deg);
+  }
+  
